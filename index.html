@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --subtext: #94a3b8;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        header {
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            color: var(--accent-color);
+            margin: 0 0 0.5rem 0;
+        }
+        p {
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+        .section {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+            color: var(--accent-color);
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            list-style: none;
+            padding: 0;
+        }
+        .skill-tag {
+            background: #334155;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .project {
+            margin-bottom: 1rem;
+        }
+        .project-title {
+            font-weight: bold;
+            color: #f1f5f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Parmanand</h1>
+            <p>Computer Science Engineering Student</p>
+        </header>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li class="skill-tag">C++ / C</li>
+                <li class="skill-tag">Python</li>
+                <li class="skill-tag">x86 Assembly</li>
+                <li class="skill-tag">Linux (Arch)</li>
+                <li class="skill-tag">Git</li>
+                <li class="skill-tag">Socket Programming</li>
+                <li class="skill-tag">Multithreading</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Featured Projects</h2>
+            <div class="project">
+                <div class="project-title">Multithreaded C++ HTTP Server</div>
+                <p>High-performance web server utilizing POSIX sockets, raw TCP communication, and a thread pool worker architecture.</p>
+            </div>
+            <div class="project">
+                <div class="project-title">Low-Level Packet Sniffer</div>
+                <p>C-based network analysis tool leveraging raw sockets for real-time Ethernet, IP, TCP, and UDP traffic inspection.</p>
+            </div>
+            <div class="project">
+                <div class="project-title">File System Analyzer</div>
+                <p>CLI utility for fast, multi-threaded directory traversal and metadata extraction via POSIX system calls.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Problem Solving & Achievements</h2>
+            <p>Solved <strong>200+ algorithmic problems</strong> across Codeforces, CSES, USACO, and LeetCode. Focused on Graph Theory, Dynamic Programming, and Data Structures in C++.</p>
+        </div>
+    </div>
+</body>
+</html>
